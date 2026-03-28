@@ -1,5 +1,5 @@
 
-import logo from '../imgs/logo.png';
+import logo from "/imgs/logo.png";
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLearning } from '../context/LearningContext';
@@ -62,7 +62,7 @@ export default function Sidebar() {
     <aside className="sidebar">
       <div className="sidebar-logo">
         <div className="logo-icon-sm">
-         <img src="src/imgs/logo.png" alt="LearnPath Logo" />
+         <img src={logo} alt="LearnPath Logo" />
         </div>
         <span className="logo-text">
           Learn<span>Path</span>
